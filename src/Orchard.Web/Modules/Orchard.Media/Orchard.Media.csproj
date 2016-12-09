@@ -14,11 +14,9 @@
     <AssemblyName>Orchard.Media</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
+    <FileUpgradeFlags></FileUpgradeFlags>
     <OldToolsVersion>4.0</OldToolsVersion>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
+    <UpgradeBackupLocation></UpgradeBackupLocation>
     <TargetFrameworkProfile />
     <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
@@ -58,6 +56,7 @@
     </Reference>
     <Reference Include="System.XML" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminMenu.cs" />
@@ -159,8 +158,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>53597</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
+          <IISUrl></IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>True</UseCustomServer>
           <CustomServerUrl>http://orchard.codeplex.com</CustomServerUrl>
