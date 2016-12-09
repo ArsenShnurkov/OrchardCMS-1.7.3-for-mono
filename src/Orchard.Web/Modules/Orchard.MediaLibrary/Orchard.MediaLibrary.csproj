@@ -340,10 +340,7 @@
   <ItemGroup>
     <Content Include="Views\Fields\MediaLibraryPicker.Summary.cshtml" />
   </ItemGroup>
-  <PropertyGroup>
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-  </PropertyGroup>
+  
   <PropertyGroup>
     <ApplicationManifest>Styles\orchard-medialibrary-admin.css</ApplicationManifest>
   </PropertyGroup>
@@ -355,9 +352,7 @@
   <Target Name="BeforeBuild">
   </Target> -->
   <Target Name="AfterBuild" DependsOnTargets="AfterBuildCompiler">
-    <PropertyGroup>
-      <AreasManifestDir>$(ProjectDir)\..\Manifests</AreasManifestDir>
-    </PropertyGroup>
+    
     <!-- If this is an area child project, uncomment the following line:
     <CreateAreaManifest AreaName="$(AssemblyName)" AreaType="Child" AreaPath="$(ProjectDir)" ManifestPath="$(AreasManifestDir)" ContentFiles="@(Content)" />
     -->
