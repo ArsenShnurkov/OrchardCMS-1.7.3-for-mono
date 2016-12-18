@@ -135,10 +135,6 @@
     <Reference Include="System.Web.Abstractions">
       <Private>False</Private>
     </Reference>
-    <Reference Include="System.Web.Razor">
-      <HintPath>..\..\..\lib\aspnetmvc\System.Web.Razor.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Configuration">
       <Private>False</Private>
     </Reference>
@@ -164,6 +160,7 @@
     <Reference Include="System.Web.Mvc" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.Razor" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">

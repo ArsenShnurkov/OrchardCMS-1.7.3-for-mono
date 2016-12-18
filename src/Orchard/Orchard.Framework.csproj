@@ -103,10 +103,6 @@
     <Reference Include="System.Web.Http.WebHost">
       <HintPath>..\..\lib\aspnetwebapi\System.Web.Http.WebHost.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\aspnetmvc\System.Web.Razor.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Autofac, Version=3.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
     <Reference Include="Autofac.Configuration, Version=3.5.2.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
@@ -120,6 +116,7 @@
     <Reference Include="System.Web.WebPages.Razor" />
     <Reference Include="System.Web.Mvc" />
     <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Razor" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Caching\DefaultCacheContextAccessor.cs" />
