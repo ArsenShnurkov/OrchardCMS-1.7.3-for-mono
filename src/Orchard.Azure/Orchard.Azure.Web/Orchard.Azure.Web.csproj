@@ -132,14 +132,6 @@
       <HintPath>..\..\..\lib\aspnetmvc\System.Web.Helpers.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\lib\aspnetmvc\System.Web.Mvc.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web">
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System.Web.Abstractions">
       <Private>False</Private>
     </Reference>
@@ -147,26 +139,7 @@
       <HintPath>..\..\..\lib\aspnetmvc\System.Web.Razor.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Web.Routing">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Web.WebPages">
-      <HintPath>..\..\..\lib\aspnetmvc\System.Web.WebPages.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\lib\aspnetmvc\System.Web.WebPages.Deployment.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Razor">
-      <HintPath>..\..\..\lib\aspnetmvc\System.Web.WebPages.Razor.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Configuration">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Web.Services">
       <Private>False</Private>
     </Reference>
     <Reference Include="System.Web.Mobile">
@@ -184,6 +157,13 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.WebPages" />
+    <Reference Include="System.Web.WebPages.Razor" />
+    <Reference Include="System.Web.WebPages.Deployment" />
+    <Reference Include="System.Web.Mvc" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Services" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
