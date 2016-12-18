@@ -96,10 +96,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\lib\windowsazure\Microsoft.WindowsFabric.Data.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\lib\newtonsoft.json\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="NHibernate.SqlAzure">
       <HintPath>..\..\..\lib\nhibernate.sqlazure\NHibernate.SqlAzure.dll</HintPath>
     </Reference>
@@ -158,6 +154,7 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Web.Razor" />
     <Reference Include="System.Web.Helpers" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">

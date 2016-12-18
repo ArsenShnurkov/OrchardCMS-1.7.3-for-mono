@@ -49,9 +49,6 @@
       <HintPath>..\..\lib\aspnetmvc\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\lib\newtonsoft.json\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\mysql\MySql.Data.dll</HintPath>
@@ -89,6 +86,7 @@
     <Reference Include="System.Web.Razor" />
     <Reference Include="System.Web.Helpers" />
     <Reference Include="NuGet.Core, Version=2.8.7.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
