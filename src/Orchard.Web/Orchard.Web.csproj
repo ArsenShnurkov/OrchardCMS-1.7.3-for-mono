@@ -57,10 +57,6 @@
       <HintPath>..\..\lib\mysql\MySql.Data.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NuGet.Core, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\lib\nuget\NuGet.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -92,6 +88,7 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Web.Razor" />
     <Reference Include="System.Web.Helpers" />
+    <Reference Include="NuGet.Core, Version=2.8.7.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
