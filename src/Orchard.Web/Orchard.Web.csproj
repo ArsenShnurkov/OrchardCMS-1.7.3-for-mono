@@ -45,11 +45,6 @@
     <PackageAsSingleFile>false</PackageAsSingleFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac, Version=2.6.3.862, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\autofac\Autofac.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\lib\aspnetmvc\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
@@ -120,6 +115,7 @@
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web.Mobile" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="Autofac, Version=3.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -164,7 +160,6 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
@@ -223,8 +218,7 @@
           <IISUrl>http://localhost:30321/OrchardLocal</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <CustomServerUrl></CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
@@ -241,7 +235,7 @@
       </RootBinFiles>
     </ItemGroup>
     <PropertyGroup>
-      <ExcludeFilesFromDeployment>@(RootBinFiles->'Modules\**\bin\%(Filename)%(Extension)');@(RootBinFiles->'Themes\**\%(Filename)%(Extension)');@(RootBinFiles->'Core\**\bin\%(Filename)%(Extension)');**\*.Debug.config;**\*.Release.config;**\obj\**;**\bin\*.xml;**\*.cs;**\*.csproj;Modules\**\Tests\**;Modules\**\Specs\**;Themes\bin\**;**\.hgignore;**\.hgtags;**\.hg\**;**\*.csproj.user;Properties\**\*;App_Data\Dependencies\*;App_Data\RecipeQueue\*;App_Data\Logs\*;App_Data\**\mappings.bin;App_Data\**\cache.dat;App_Data\**\hrestart.txt</ExcludeFilesFromDeployment>
+      <ExcludeFilesFromDeployment>@(RootBinFiles-&gt;'Modules\**\bin\%(Filename)%(Extension)');@(RootBinFiles-&gt;'Themes\**\%(Filename)%(Extension)');@(RootBinFiles-&gt;'Core\**\bin\%(Filename)%(Extension)');**\*.Debug.config;**\*.Release.config;**\obj\**;**\bin\*.xml;**\*.cs;**\*.csproj;Modules\**\Tests\**;Modules\**\Specs\**;Themes\bin\**;**\.hgignore;**\.hgtags;**\.hg\**;**\*.csproj.user;Properties\**\*;App_Data\Dependencies\*;App_Data\RecipeQueue\*;App_Data\Logs\*;App_Data\**\mappings.bin;App_Data\**\cache.dat;App_Data\**\hrestart.txt</ExcludeFilesFromDeployment>
     </PropertyGroup>
   </Target>
   <Target Name="ExcludeRootBinariesPackage" DependsOnTargets="ExcludeRootBinariesDeployment" BeforeTargets="ExcludeFilesFromPackage">
@@ -258,7 +252,6 @@
     <Copy SourceFiles="@(SqlCeBinariesx64)" DestinationFolder="$(OutputPath)\amd64\%(RecursiveDir)" SkipUnchangedFiles="true" />
   </Target>
   <Target Name="AfterBuild" DependsOnTargets="MvcBuildViews">
-    
     <CallTarget Targets="ExcludeRootBinariesDeployment" />
     <CallTarget Targets="CopySqlCeBinaries" />
     <!-- If this is an area child project, uncomment the following line:
