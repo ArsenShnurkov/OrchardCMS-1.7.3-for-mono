@@ -80,7 +80,6 @@
     <Reference Include="NHibernate.SqlAzure">
       <HintPath>..\..\lib\nhibernate.sqlazure\NHibernate.SqlAzure.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -88,7 +87,6 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Data" />
     <Reference Include="System.Net.Http">
       <HintPath>..\..\lib\aspnetwebapi\System.Net.Http.dll</HintPath>
     </Reference>
@@ -124,12 +122,14 @@
     <Reference Include="System.Web.WebPages.Razor">
       <HintPath>..\..\lib\aspnetmvc\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Autofac, Version=3.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
     <Reference Include="Autofac.Configuration, Version=3.5.2.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
     <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc" />
     <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=a5715cc6d5c3540b" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Caching\DefaultCacheContextAccessor.cs" />
