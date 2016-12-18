@@ -87,9 +87,6 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Net.Http">
-      <HintPath>..\..\lib\aspnetwebapi\System.Net.Http.dll</HintPath>
-    </Reference>
     <Reference Include="System.Runtime.Serialization">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
@@ -97,9 +94,6 @@
     <Reference Include="System.ServiceModel.Activation" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="System.Web.Http">
-      <HintPath>..\..\lib\aspnetwebapi\System.Web.Http.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.Http.WebHost">
       <HintPath>..\..\lib\aspnetwebapi\System.Web.Http.WebHost.dll</HintPath>
     </Reference>
@@ -117,6 +111,8 @@
     <Reference Include="System.Web.Mvc" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Web.Razor" />
+    <Reference Include="System.Web.Http" />
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Caching\DefaultCacheContextAccessor.cs" />
